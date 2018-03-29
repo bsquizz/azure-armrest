@@ -299,7 +299,7 @@ module Azure
               :grant_type    => grant_type,
               :client_id     => client_id,
               :client_secret => client_key,
-              :resource      => environment.resource_url
+              :resource      => environment.active_directory_resource_id
             }
           )
         )

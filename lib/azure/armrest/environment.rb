@@ -85,23 +85,38 @@ module Azure
       alias resource_url resource_manager_url
 
       # Pre-generated environments
-
       Public = new(
-        :name                          => 'Public',
-        :active_directory_authority    => 'https://login.microsoftonline.com/',
-        :active_directory_resource_id  => 'https://management.core.windows.net/',
-        :gallery_url                   => 'https://gallery.azure.com/',
-        :graph_url                     => 'https://graph.windows.net/',
+        :name                          => 'TestStack',
+        :active_directory_authority    => 'https://login.windows.net/',
+        :active_directory_resource_id  => 'https://management.poc.avahc.com/01a7976d-5a10-475d-b39d-01993f9d7d90',
+        :gallery_url                   => 'https://gallery.westus.stackpoc.com/',
+        :graph_url                     => 'https://graph.westus.stackpoc.com/',
         :graph_api_version             => '1.6',
-        :key_vault_dns_suffix          => 'vault.azure.net',
-        :key_vault_service_resource_id => 'https://vault.azure.net',
-        :publish_settings_file_url     => 'https://manage.windowsazure.com/publishsettings/index',
-        :resource_manager_url          => 'https://management.azure.com/',
-        :service_management_url        => 'https://management.core.windows.net/',
-        :sql_database_dns_suffix       => 'database.windows.net',
-        :storage_suffix                => 'core.windows.net',
+        :key_vault_dns_suffix          => 'vault.westus.stackpoc.com',
+        :key_vault_service_resource_id => 'https://vault.westus.stackpoc.com/',
+        :publish_settings_file_url     => 'https://management.westus.stackpoc.com/publishsettings/index',
+        :resource_manager_url          => 'https://management.westus.stackpoc.com/',
+        :service_management_url        => 'https://management.westus.stackpoc.com/',
+        :sql_database_dns_suffix       => 'westus.stackpoc.com',
+        :storage_suffix                => 'westus.stackpoc.com',
         :traffic_manager_dns_suffix    => 'trafficmanager.net',
       )
+      #Public = new(
+      #  :name                          => 'Public',
+      #  :active_directory_authority    => 'https://login.microsoftonline.com/',
+      #  :active_directory_resource_id  => 'https://management.core.windows.net/',
+      #  :gallery_url                   => 'https://gallery.azure.com/',
+      #  :graph_url                     => 'https://graph.windows.net/',
+      #  :graph_api_version             => '1.6',
+      #  :key_vault_dns_suffix          => 'vault.azure.net',
+      #  :key_vault_service_resource_id => 'https://vault.azure.net',
+      #  :publish_settings_file_url     => 'https://manage.windowsazure.com/publishsettings/index',
+      #  :resource_manager_url          => 'https://management.azure.com/',
+      #  :service_management_url        => 'https://management.core.windows.net/',
+      #  :sql_database_dns_suffix       => 'database.windows.net',
+      #  :storage_suffix                => 'core.windows.net',
+      #  :traffic_manager_dns_suffix    => 'trafficmanager.net',
+      #)
 
       USGovernment = new(
         :name                          => 'US Government',
